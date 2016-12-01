@@ -1,0 +1,46 @@
+/*  More, Ashwini   Account: jadrn031
+                    CS545, Fall 2016
+                    Project #3
+*/
+
+.header        {height:15px;
+               background-color:#4e4edb;
+               position:relative;}
+footer        {padding:10px 0;
+               background-color: #4e4edb;
+               text-align: center;
+               color: white;
+               font-size:14px;}
+h1,h2 { 
+    text-align: center;
+    }      
+h2{
+	color:red;
+	margin-top:20px;
+}
+table {
+    width: 60%;
+	margin-top:20px;
+	margin-bottom:200px;
+	margin-left:auto;
+	margin-right:auto;
+	font-family:arial;
+	font-size:100%;
+	border-collapse:collapse;
+    }
+   
+td, th  
+{
+    border: 1px solid black;
+    padding: 5px;
+	text-align: center;
+}        
+th{
+	 background-color: black;
+               text-align: center;
+               color: white;
+	
+}    
+tr:nth-child(even){
+	background-color: #9999ef;
+}

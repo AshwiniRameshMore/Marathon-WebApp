@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<!--  More, Ashwini  Account: jadrn031
+                     CS545, Fall 2016
+                     Project #3
+-->
+
+<head>
+    <title>Sign Up</title>
+    <meta charset=utf-8>
+    <link rel=stylesheet href="stylesheet.css">
+	<script src="http://jadran.sdsu.edu/jquery/jquery.js"></script>
+	<script type="text/javascript" src="form.js"></script> 
+</head>
+<body>
+
+<h1>Sign Up Here</h1>
+<div class="header"></div>
+    <fieldset>
+	  <legend>Sign up</legend>
+    <form name="customer" method="post" action="process_request.php" enctype="multipart/form-data">
+	    <table>
+		 <tr>
+		 <td>
+	        <table>
+			  <tr>
+			   <td><font color="red">*</font><label for="first_name">First Name:</label></td>
+			   <td><input type="text" id="first_name" name="first_name"/></td>
+			  </tr>
+			  
+			  <tr>
+			   <td>&nbsp;<label for="middle_name">Middle Name:</label></td>
+			   <td><input type="text" id="middle_name" name="middle_name"/></td>
+			  </tr>
+			  
+			  <tr>
+			   <td><font color="red">*</font><label for="last_name">Last Name:</label></td>
+			   <td><input type="text" id="last_name" name="last_name"/></td>
+			  </tr>
+			  
+			  <tr>
+			   <td><font color="red">*</font><label for="address1">Address Line 1:</label></td>
+			   <td><textarea id="address1" name="address1" cols="18" rows="2"></textarea></td>
+			  </tr> 
+			  
+			  <tr>
+			   <td>&nbsp;<label for="address2">Address Line 2:</label></td>
+			   <td><textarea id="address2" name="address2" cols="18" rows="2"></textarea></td>
+			  </tr> 
+			  
+			  <tr>
+			   <td><font color="red">*</font><label for="city">City:</label></td>
+			   <td><input type="text" id="city" name="city"/></td>
+              </tr>
+
+              <tr>     			  
+    			<td><font color="red">*</font><label for="state">State:</label></td>
+				<td><input type="text" id="state" name="state"/></td>
+			  </tr>
+			   
+			  <tr>
+			    <td><font color="red">*</font><label for="zip">Zip code:</label></td>
+				<td><input type="text" id="zip" name="zip"/></td>  
+			  </tr> 
+			  
+			   <tr>
+			    <td><font color="red">*</font><label for="image">Image:</label></td>
+				<td><input type="file" id="image" name="image"/></td>  
+			  </tr> 
+			  </table>
+			</td>
+            <td>
+              <table> 			
+			  <tr>
+			    <td><font color="red">*</font><label for="phone">Primary phone:</label></td>
+				<td>(<input type="text" id="phone1" name="phone1" size="3" maxlength="3"/>)
+					<input type="text" id="phone2" name="phone2" size="3" maxlength="3"/>
+					<input type="text" id="phone3" name="phone3" size="4" maxlength="4"/>
+				</td>
+			  </tr>
+			  
+			  <tr>
+			   <td><font color="red">*</font><label for="email">Email address:</label></td>
+			   <td><input type="text" id="email" name="email"/></td>	
+			  </tr>
+			  
+			  <tr>
+			    <td><font color="red">*</font><label for="gender">Gender:</label></td>
+				<td><input type="radio" name="gender" value="Male">Male
+				<input type="radio" name="gender" value="Female">Female</td>
+			  </tr>
+			  
+			  <tr>
+			    <td><font color="red">*</font><label for="dob">Date of Birth:</label></td>
+				<td><input type="text" id="dob" name="dob" placeholder="yyyy/mm/dd"/></td>
+			  </tr>
+			  
+			  <tr>
+			    <td><label for="medical">&nbsp;Medical Conditions:</label></td>
+				<td><textarea id="medical" name="medical"></textarea></td>
+			  </tr>
+			  
+			  <tr>
+			    <td><font color="red">*</font><label for="exp">Experience level:</label></td>
+				<td>
+				  <input type="radio" name="exp" value="Expert"> Expert<br>
+				  <input type="radio" name="exp" value="Experienced"> Experienced<br>
+				  <input type="radio" name="exp" value="Novice"> Novice
+				</td>
+		      </tr>
+			  
+			  <tr>
+			    <td><font color="red">*</font><label for="category">Category:</label></td>
+				<td>
+					<input type="radio" name="cat" value="Teen">Teen<br>
+					<input type="radio" name="cat" value="Adult">Adult<br>
+					<input type="radio" name="cat" value="Senior">Senior<br>
+				</td>
+			  </tr>
+			  </table>
+			 </td>
+		    </tr> 			 
+		</table>
+		<div id="btn_panel">
+		<input type="button" id="clr_btn" value="Clear"/>
+		<input type="submit" id="sign_btn" value="Sign Up"/>
+		<br>
+		</div>
+	</form>
+	</fieldset>
+		<h2 id="errMsg"></h2>
+	
+<footer>Copyright &copy; 2016. All Rights Reserved.</footer>
+</body>
+</html>
